@@ -1,216 +1,251 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Faith Ochanya Ejembi — AI Engineer & Python Developer. Learning to build AI-powered applications with Python and FastAPI.">
+  <meta property="og:title" content="Faith Ochanya Ejembi | AI Engineer & Python Developer">
+  <meta property="og:description" content="Learning to build AI-powered applications and practical software with Python, FastAPI and AI technologies.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
 
-    <title>Faith Ochanya Ejembi | AI Engineer</title>
+  <title>Faith Ochanya Ejembi | AI Engineer &amp; Python Developer</title>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    /* Set theme before first paint to avoid a flash of the wrong palette. */
+    document.documentElement.classList.add('js');
+    try {
+      var t = localStorage.getItem('theme');
+      if (t) document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <h2>Faith.</h2>
+  <div id="status-bar">
+    <span id="status-left">🖥️ faith@ejembi45</span>
+    <span id="status-right">
+      <span id="status-time"></span>
+      <span id="status-date"></span>
+    </span>
+  </div>
 
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <canvas id="bg-canvas"></canvas>
+  <div class="shape shape-1"></div>
+  <div class="shape shape-2"></div>
+  <div class="shape shape-3"></div>
+  <div class="shape shape-4"></div>
 
+  <a class="skip-link" href="#main">Skip to Content</a>
 
-    <!-- Home -->
-    <section id="home" class="hero">
+  <header id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><span class="logo-dot"></span>faith@ejembi45</a>
 
-        <div class="hero-content">
-            <p class="intro">Hello, I'm</p>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
 
-            <h1>Faith Ochanya Ejembi</h1>
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
 
-            <h2>AI Engineer & Python Developer</h2>
+  <main class="page" id="main">
 
-            <p>
-                I'm learning how to build AI-powered applications
-                and practical software using Python, FastAPI,
-                and AI technologies.
-            </p>
+    <!-- Hero -->
+    <section class="hero container">
+      <div class="hero-grid">
+        <div>
+          <div class="hero-eyebrow">🟢 Learning Python &amp; AI</div>
 
-            <a href="#projects" class="button">View My Projects</a>
+          <h1>I'm learning to build <span class="accent">intelligent</span> software that solves real problems.</h1>
+
+          <p class="hero-sub"><span class="typing-text">AI Engineer in the making</span></p>
+
+          <div class="hero-ctas">
+            <a href="projects.html" class="btn btn-primary">View My Projects
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
+            </a>
+            <a href="about.html" class="btn btn-secondary">More About Me</a>
+          </div>
+
+          <div class="hero-meta">
+            <span>🐍 Python · FastAPI</span>
+            <span>🤖 AI apps · LLM APIs</span>
+            <span>✉️ faithejembi72@gmail.com</span>
+          </div>
         </div>
 
+        <div class="hero-portrait">
+          <div class="portrait-fallback" aria-hidden="true">FE</div>
+          <img src="assets/images/profile.jpg" alt="Faith Ochanya Ejembi">
+        </div>
+      </div>
     </section>
-
-
-    <!-- About -->
-    <section id="about">
-
-        <h2>About Me</h2>
-
-        <p>
-            I started learning programming because I want to develop
-            the ability to solve real-world problems through AI.
-        </p>
-
-        <p>
-            Currently, I'm learning Python, which I see as a pathway
-            to becoming a skilled AI Engineer. My goal is to keep
-            growing my skills until I can use AI and software to solve
-            meaningful real-world problems.
-        </p>
-
-    </section>
-
 
     <!-- Skills -->
-    <section id="skills">
-
+    <section class="section container fade-in">
+      <div class="section-header">
+        <div class="section-eyebrow">What I work with</div>
         <h2>Skills</h2>
+        <p>The tools and technologies I'm using as I learn to build software.</p>
+      </div>
 
-        <div class="skills-container">
-
-            <div class="skill-card">
-                <h3>Programming</h3>
-                <p>Python, Go, JavaScript</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>Web Technologies</h3>
-                <p>HTML, CSS</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>Backend</h3>
-                <p>FastAPI, Python, Go</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>AI</h3>
-                <p>AI application development, LLM/API integration, Hugging Face</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>Tools</h3>
-                <p>Git, GitHub</p>
-            </div>
-
+      <div class="cards-grid">
+        <div class="card service-card">
+          <div class="service-icon" aria-hidden="true">⌨️</div>
+          <h3>Programming</h3>
+          <p>Writing my first programs and learning the fundamentals of how software is structured.</p>
+          <ul class="deliverables">
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Go</li>
+          </ul>
         </div>
 
-    </section>
+        <div class="card service-card">
+          <div class="service-icon" aria-hidden="true">🌐</div>
+          <h3>Web Technologies</h3>
+          <p>Building and styling pages by hand, and understanding how the browser renders them.</p>
+          <ul class="deliverables">
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </div>
 
+        <div class="card service-card">
+          <div class="service-icon" aria-hidden="true">⚙️</div>
+          <h3>Backend</h3>
+          <p>Learning to build the server side of applications — routes, requests and responses.</p>
+          <ul class="deliverables">
+            <li>FastAPI</li>
+            <li>Python</li>
+            <li>Go</li>
+          </ul>
+        </div>
+
+        <div class="card service-card">
+          <div class="service-icon" aria-hidden="true">🤖</div>
+          <h3>AI</h3>
+          <p>Connecting applications to AI models and learning how to use them for practical tasks.</p>
+          <ul class="deliverables">
+            <li>AI application development</li>
+            <li>LLM / API integration</li>
+            <li>Hugging Face</li>
+          </ul>
+        </div>
+
+        <div class="card service-card">
+          <div class="service-icon" aria-hidden="true">🧰</div>
+          <h3>Tools</h3>
+          <p>Keeping my work versioned and sharing it, so that progress is visible and reversible.</p>
+          <ul class="deliverables">
+            <li>Git</li>
+            <li>GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
     <!-- Projects -->
-    <section id="projects">
-
+    <section class="section container fade-in">
+      <div class="section-header">
+        <div class="section-eyebrow">Things I've built</div>
         <h2>Projects</h2>
+        <p>Two projects I've built while learning — one in progress, one finished.</p>
+      </div>
 
-
-        <!-- Fibles -->
-        <div class="project-card">
-
+      <div class="projects-grid">
+        <a href="projects.html" class="project-card">
+          <div class="project-thumb" aria-hidden="true">📚</div>
+          <div class="project-body">
             <h3>Fibles — AI Study Assistant</h3>
+            <p>An AI-powered study assistant for secondary-school students, giving structured answers pitched to a student's learning level.</p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Hugging Face</span>
+            </div>
+            <span class="project-link">Read more →</span>
+          </div>
+        </a>
 
-            <p>
-                Fibles is an AI-powered study assistant designed for
-                secondary-school students. It aims to provide students
-                with a structured curriculum that supports learning
-                and helps them keep track of their progress.
-            </p>
-
-            <p>
-                Fibles can provide structured answers based on a
-                student's learning level and is being developed to
-                support features such as quiz generation and learning
-                progress tracking.
-            </p>
-
-            <p>
-                <strong>Technologies:</strong>
-                Python, FastAPI, Hugging Face, HTML, CSS, JavaScript
-            </p>
-
-            <a href="https://github.com/ejembi45/fibles"
-               target="_blank">
-                View on GitHub
-            </a>
-
-        </div>
-
-
-        <!-- Password Strength Checker -->
-        <div class="project-card">
-
+        <a href="projects.html" class="project-card">
+          <div class="project-thumb" aria-hidden="true">🔐</div>
+          <div class="project-body">
             <h3>Password Strength Checker</h3>
+            <p>Evaluates a password, judges whether it is weak or strong, and explains how to make it better.</p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">CSS</span>
+            </div>
+            <span class="project-link">Read more →</span>
+          </div>
+        </a>
+      </div>
 
-            <p>
-                A password-strength checker that evaluates a user's
-                password and identifies whether it is weak or strong.
-                It provides feedback and suggestions to help users
-                create stronger passwords.
-            </p>
-
-            <p>
-                I built this project to understand password validation,
-                conditional logic, and how security-focused software
-                can provide useful feedback to users.
-            </p>
-
-            <p>
-                <strong>Technologies:</strong>
-                Python, JavaScript, CSS
-            </p>
-
-            <a href="https://github.com/ejembi45/password-strength-checker"
-               target="_blank">
-                View on GitHub
-            </a>
-
-        </div>
-
+      <div style="text-align:center; margin-top: 32px;">
+        <a href="projects.html" class="btn btn-ghost">See both projects in detail →</a>
+      </div>
     </section>
 
-
-    <!-- Contact -->
-    <section id="contact">
-
-        <h2>Contact Me</h2>
-
-        <p>
-            I'm always interested in learning, building, and
-            connecting with other developers and AI enthusiasts.
-        </p>
-
-        <p>
-            Email:
-            <a href="mailto:faithejembi72@gmail.com">
-                faithejembi72@gmail.com
-            </a>
-        </p>
-
-        <p>
-            GitHub:
-            <a href="https://github.com/ejembi45" target="_blank">
-                github.com/ejembi45
-            </a>
-        </p>
-
+    <!-- CTA -->
+    <section class="section container fade-in">
+      <div class="cta-band">
+        <div class="section-eyebrow">Say hello</div>
+        <h2>I'd love to hear from you.</h2>
+        <p>If you're learning too, or you'd like to point me at something worth building, my inbox is open.</p>
+        <a href="contact.html" class="btn btn-primary" style="font-size: 1.05rem; padding: 16px 32px;">Get in Touch →</a>
+      </div>
     </section>
 
+  </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Faith Ochanya Ejembi. All rights reserved.</p>
-    </footer>
+  <footer id="site-footer">
+    <div class="footer-inner">
+      <p>© <span class="js-year">2026</span> Faith Ochanya Ejembi.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a href="mailto:faithejembi72@gmail.com">Email</a>
+        <a href="https://github.com/ejembi45" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
 
+  <div id="terminal-overlay" role="dialog" aria-label="Terminal">
+    <div id="terminal-header">
+      <span>📟 Terminal — faith@ejembi45</span>
+      <button id="terminal-close" aria-label="Close terminal">✕</button>
+    </div>
+    <div id="terminal-output">
+      <div class="terminal-line">&gt; Welcome to faith@ejembi45</div>
+      <div class="terminal-line">&gt; Type 'help' for available commands</div>
+      <div class="terminal-line">&gt;</div>
+    </div>
+    <div id="terminal-input-wrap">
+      <span class="terminal-prompt">$</span>
+      <input type="text" id="terminal-input" autocomplete="off" spellcheck="false" placeholder="Enter command...">
+    </div>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>

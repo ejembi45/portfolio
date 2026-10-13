@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Projects by Faith Ochanya Ejembi — Fibles, an AI study assistant, and a password strength checker.">
+  <meta property="og:title" content="Projects | Faith Ochanya Ejembi">
+  <meta property="og:description" content="An AI study assistant and a password strength checker, built while learning Python.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <title>Projects | Faith Ochanya Ejembi</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script>
+    document.documentElement.classList.add('js');
+    try {
+      var t = localStorage.getItem('theme');
+      if (t) document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
+</head>
+
+<body>
+
+  <div id="status-bar">
+    <span id="status-left">🖥️ faith@ejembi45</span>
+    <span id="status-right">
+      <span id="status-time"></span>
+      <span id="status-date"></span>
+    </span>
+  </div>
+
+  <canvas id="bg-canvas"></canvas>
+  <div class="shape shape-1"></div>
+  <div class="shape shape-2"></div>
+  <div class="shape shape-3"></div>
+  <div class="shape shape-4"></div>
+
+  <a class="skip-link" href="#main">Skip to Content</a>
+
+  <header id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><span class="logo-dot"></span>faith@ejembi45</a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page" id="main">
+
+    <section class="section container">
+      <div class="section-header">
+        <div class="section-eyebrow">My work</div>
+        <h1>Projects</h1>
+        <p>Two projects I've built while learning — one I'm still working on, and one I finished.</p>
+      </div>
+
+      <!-- Fibles -->
+      <article class="project-feature">
+        <div class="section-eyebrow">In progress</div>
+        <h3>📚 Fibles — AI Study Assistant</h3>
+
+        <p>
+          Fibles is an AI-powered study assistant designed for
+          secondary-school students. It aims to provide students
+          with a structured curriculum that supports learning
+          and helps them keep track of their progress.
+        </p>
+
+        <p>
+          Fibles can provide structured answers based on a
+          student's learning level and is being developed to
+          support features such as quiz generation and learning
+          progress tracking.
+        </p>
+
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">Hugging Face</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+        </div>
+
+        <div class="feature-actions">
+          <a href="https://github.com/ejembi45/fibles" target="_blank" rel="noopener" class="btn btn-primary">
+            View on GitHub
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Password Strength Checker -->
+      <article class="project-feature">
+        <div class="section-eyebrow">Finished</div>
+        <h3>🔐 Password Strength Checker</h3>
+
+        <p>
+          A password-strength checker that evaluates a user's
+          password and identifies whether it is weak or strong.
+          It provides feedback and suggestions to help users
+          create stronger passwords.
+        </p>
+
+        <p>
+          I built this project to understand password validation,
+          conditional logic, and how security-focused software
+          can provide useful feedback to users.
+        </p>
+
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">CSS</span>
+        </div>
+
+        <div class="feature-actions">
+          <a href="https://github.com/ejembi45/password-strength-checker" target="_blank" rel="noopener" class="btn btn-primary">
+            View on GitHub
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <section class="section container fade-in">
+      <div class="cta-band">
+        <div class="section-eyebrow">More coming</div>
+        <h2>This list is going to grow.</h2>
+        <p>I'm learning something new every week. If you'd like to follow along or work together, get in touch.</p>
+        <a href="contact.html" class="btn btn-primary" style="font-size: 1.05rem; padding: 16px 32px;">Get in Touch →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="site-footer">
+    <div class="footer-inner">
+      <p>© <span class="js-year">2026</span> Faith Ochanya Ejembi.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a href="mailto:faithejembi72@gmail.com">Email</a>
+        <a href="https://github.com/ejembi45" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="terminal-overlay" role="dialog" aria-label="Terminal">
+    <div id="terminal-header">
+      <span>📟 Terminal — faith@ejembi45</span>
+      <button id="terminal-close" aria-label="Close terminal">✕</button>
+    </div>
+    <div id="terminal-output">
+      <div class="terminal-line">&gt; Welcome to faith@ejembi45</div>
+      <div class="terminal-line">&gt; Type 'help' for available commands</div>
+      <div class="terminal-line">&gt;</div>
+    </div>
+    <div id="terminal-input-wrap">
+      <span class="terminal-prompt">$</span>
+      <input type="text" id="terminal-input" autocomplete="off" spellcheck="false" placeholder="Enter command...">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

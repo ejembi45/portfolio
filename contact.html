@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Get in touch with Faith Ochanya Ejembi — email and GitHub.">
+  <meta property="og:title" content="Contact | Faith Ochanya Ejembi">
+  <meta property="og:description" content="Email and GitHub links for Faith Ochanya Ejembi.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <title>Contact | Faith Ochanya Ejembi</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script>
+    document.documentElement.classList.add('js');
+    try {
+      var t = localStorage.getItem('theme');
+      if (t) document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
+</head>
+
+<body>
+
+  <div id="status-bar">
+    <span id="status-left">🖥️ faith@ejembi45</span>
+    <span id="status-right">
+      <span id="status-time"></span>
+      <span id="status-date"></span>
+    </span>
+  </div>
+
+  <canvas id="bg-canvas"></canvas>
+  <div class="shape shape-1"></div>
+  <div class="shape shape-2"></div>
+  <div class="shape shape-3"></div>
+  <div class="shape shape-4"></div>
+
+  <a class="skip-link" href="#main">Skip to Content</a>
+
+  <header id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><span class="logo-dot"></span>faith@ejembi45</a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page" id="main">
+
+    <section class="section container">
+      <div class="section-header">
+        <div class="section-eyebrow">Contact me</div>
+        <h1>Let's connect.</h1>
+        <p>
+          I'm always interested in learning, building, and
+          connecting with other developers and AI enthusiasts.
+        </p>
+      </div>
+
+      <div class="contact-links">
+        <a class="contact-line" href="mailto:faithejembi72@gmail.com">
+          <span class="contact-line-label">Email</span>
+          <span class="contact-line-value">faithejembi72@gmail.com</span>
+        </a>
+
+        <a class="contact-line" href="https://github.com/ejembi45" target="_blank" rel="noopener">
+          <span class="contact-line-label">GitHub</span>
+          <span class="contact-line-value">github.com/ejembi45</span>
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>What to write about</h3>
+        <p>
+          You're learning too and want to compare notes, you've spotted
+          something I could do better in one of my projects, or you just
+          want to say hello — all of that is welcome.
+        </p>
+        <p>
+          I read everything that comes in, though it may take me a day
+          or two to reply while I'm studying.
+        </p>
+      </div>
+    </section>
+
+    <section class="section container fade-in">
+      <div class="cta-band">
+        <div class="section-eyebrow">One more thing</div>
+        <h2>Have a look at what I've built.</h2>
+        <p>Fibles, an AI study assistant, and a password strength checker.</p>
+        <a href="projects.html" class="btn btn-primary" style="font-size: 1.05rem; padding: 16px 32px;">View My Projects →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="site-footer">
+    <div class="footer-inner">
+      <p>© <span class="js-year">2026</span> Faith Ochanya Ejembi.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a href="mailto:faithejembi72@gmail.com">Email</a>
+        <a href="https://github.com/ejembi45" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="terminal-overlay" role="dialog" aria-label="Terminal">
+    <div id="terminal-header">
+      <span>📟 Terminal — faith@ejembi45</span>
+      <button id="terminal-close" aria-label="Close terminal">✕</button>
+    </div>
+    <div id="terminal-output">
+      <div class="terminal-line">&gt; Welcome to faith@ejembi45</div>
+      <div class="terminal-line">&gt; Type 'help' for available commands</div>
+      <div class="terminal-line">&gt;</div>
+    </div>
+    <div id="terminal-input-wrap">
+      <span class="terminal-prompt">$</span>
+      <input type="text" id="terminal-input" autocomplete="off" spellcheck="false" placeholder="Enter command...">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

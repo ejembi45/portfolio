@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="About Faith Ochanya Ejembi — why she started learning to program, and what she is working on now.">
+  <meta property="og:title" content="About | Faith Ochanya Ejembi">
+  <meta property="og:description" content="Learning Python as a pathway to becoming a skilled AI engineer.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <title>About | Faith Ochanya Ejembi</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script>
+    document.documentElement.classList.add('js');
+    try {
+      var t = localStorage.getItem('theme');
+      if (t) document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
+</head>
+
+<body>
+
+  <div id="status-bar">
+    <span id="status-left">🖥️ faith@ejembi45</span>
+    <span id="status-right">
+      <span id="status-time"></span>
+      <span id="status-date"></span>
+    </span>
+  </div>
+
+  <canvas id="bg-canvas"></canvas>
+  <div class="shape shape-1"></div>
+  <div class="shape shape-2"></div>
+  <div class="shape shape-3"></div>
+  <div class="shape shape-4"></div>
+
+  <a class="skip-link" href="#main">Skip to Content</a>
+
+  <header id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><span class="logo-dot"></span>faith@ejembi45</a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page" id="main">
+
+    <section class="section container">
+      <div class="section-header">
+        <div class="section-eyebrow">About me</div>
+        <h1>I started learning to program so I could solve real problems.</h1>
+        <p>Here's where I'm coming from, and what I'm working on at the moment.</p>
+      </div>
+
+      <div class="about-grid">
+        <div>
+          <p>
+            I started learning programming because I want to develop
+            the ability to solve real-world problems through AI.
+          </p>
+          <p>
+            Currently, I'm learning Python, which I see as a pathway
+            to becoming a skilled AI Engineer. My goal is to keep
+            growing my skills until I can use AI and software to solve
+            meaningful real-world problems.
+          </p>
+
+          <div class="now-section">
+            <h4>What I'm learning now</h4>
+            <ul>
+              <li>Working through Python fundamentals and writing small programs</li>
+              <li>Building Fibles, an AI study assistant, with FastAPI and Hugging Face</li>
+              <li>Learning how to connect applications to LLM APIs</li>
+              <li>Practising Git and GitHub so my progress is tracked and shared</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="facts-list">
+          <div class="fact">
+            <span class="fact-icon" aria-hidden="true">🐍</span>
+            <span><strong>Learning</strong> — Python, as a pathway to AI</span>
+          </div>
+          <div class="fact">
+            <span class="fact-icon" aria-hidden="true">🤖</span>
+            <span><strong>Focus</strong> — AI application development</span>
+          </div>
+          <div class="fact">
+            <span class="fact-icon" aria-hidden="true">🚀</span>
+            <span><strong>Building</strong> — Fibles, an AI study assistant</span>
+          </div>
+          <div class="fact">
+            <span class="fact-icon" aria-hidden="true">📫</span>
+            <span><strong>Open to</strong> — learning opportunities</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container fade-in">
+      <div class="section-header">
+        <div class="section-eyebrow">Toolbox</div>
+        <h2>Technologies I've touched</h2>
+        <p>Some of these I'm still getting to grips with. That's the point.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-item">Python</div>
+        <div class="skill-item">JavaScript</div>
+        <div class="skill-item">Go</div>
+        <div class="skill-item">HTML</div>
+        <div class="skill-item">CSS</div>
+        <div class="skill-item">FastAPI</div>
+        <div class="skill-item">Hugging Face</div>
+        <div class="skill-item">LLM APIs</div>
+        <div class="skill-item">Git</div>
+        <div class="skill-item">GitHub</div>
+      </div>
+    </section>
+
+    <section class="section container fade-in">
+      <div class="cta-band">
+        <div class="section-eyebrow">Next</div>
+        <h2>See what I've built.</h2>
+        <p>Two projects so far — an AI study assistant and a password strength checker.</p>
+        <a href="projects.html" class="btn btn-primary" style="font-size: 1.05rem; padding: 16px 32px;">View My Projects →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="site-footer">
+    <div class="footer-inner">
+      <p>© <span class="js-year">2026</span> Faith Ochanya Ejembi.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a href="mailto:faithejembi72@gmail.com">Email</a>
+        <a href="https://github.com/ejembi45" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="terminal-overlay" role="dialog" aria-label="Terminal">
+    <div id="terminal-header">
+      <span>📟 Terminal — faith@ejembi45</span>
+      <button id="terminal-close" aria-label="Close terminal">✕</button>
+    </div>
+    <div id="terminal-output">
+      <div class="terminal-line">&gt; Welcome to faith@ejembi45</div>
+      <div class="terminal-line">&gt; Type 'help' for available commands</div>
+      <div class="terminal-line">&gt;</div>
+    </div>
+    <div id="terminal-input-wrap">
+      <span class="terminal-prompt">$</span>
+      <input type="text" id="terminal-input" autocomplete="off" spellcheck="false" placeholder="Enter command...">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
